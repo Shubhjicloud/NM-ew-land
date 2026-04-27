@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* 🔥 Red Purple Aura Background */
+body::before {
+  content: "";
+  position: fixed;
+  width: 350px;
+  height: 350px;
+  background: #ff0033; /* red */
+  filter: blur(140px);
+  top: 20%;
+  left: 10%;
+  opacity: 0.35;
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 350px;
+  height: 350px;
+  background: #8a00ff; /* purple */
+  filter: blur(140px);
+  bottom: 10%;
+  right: 10%;
+  opacity: 0.35;
+  z-index: -1;
+}
+
+.container {
+  padding: 20px;
+}
+
+.logo {
+  width: 140px;
+  border-radius: 50%;
+  margin-top: 10px;
+  box-shadow: 0 0 30px #ff0033;
+}
+
+/* 🔥 Gradient Heading */
+h1 {
+  font-size: 34px;
+  margin: 20px 0 10px;
+
+  background: linear-gradient(45deg, #ff0033, #ff00cc, #8a00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 
+    0 0 10px rgba(255,0,51,0.7),
+    0 0 25px rgba(255,0,204,0.6),
+    0 0 45px rgba(138,0,255,0.5);
+}
+
+.subtext {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* ✨ Highlight words */
+.highlight {
+  color: #ff00cc;
+  text-shadow: 0 0 10px #ff00cc;
+  font-weight: bold;
+}
+
+/* 🚀 Button */
+.btn {
+  display: block;
+  margin: 15px auto;
+  padding: 15px;
+  width: 90%;
+  max-width: 300px;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #ff0033, #8a00ff);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 25px #ff0033;
+  transition: 0.3s;
+
+  animation: pulse 2s infinite;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* 🔁 Pulse */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px #ff0033;
+  }
+  50% {
+    box-shadow: 0 0 35px #8a00ff;
+  }
+  100% {
+    box-shadow: 0 0 10px #ff0033;
+  }
+}
+
+.users {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.main-img {
+  width: 90%;
+  max-width: 320px;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #8a00ff;
+}
+
+.proof {
+  position: relative;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 320px;
+}
+
+.proof img {
+  width: 100%;
+  border-radius: 15px;
+  filter: blur(4px);
+  opacity: 0.7;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ff00cc;
+  font-weight: bold;
+  text-shadow: 0 0 10px #ff00cc;
+}
+
+.bottom {
+  margin-top: 25px;
+}
